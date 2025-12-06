@@ -1,5 +1,17 @@
 <img src="https://raw.githubusercontent.com/jankotek/mapdb-site/gh-pages/images/art/rocket-small.png" width=90 height=90 align="left"/>
 
+MapDB: Changes by PtrO
+======================
+06dec25 15u35 ptro: regenerate original version V1.0.9 by downloading/convert/integrate data from [Maven](https://repo1.maven.org/maven2/org/mapdb/mapdb/1.0.9/)
+
+This as we must resolve an error: The activate method has thrown an exception java.lang.ClassCastException: org.openhab.persistence.mapdb.internal.MapDBitemSerializer cannot be cast to org.mapdb.Serializer
+        at org.mapdb.DB.getTreeMap(DB.java:805) ~[?:?] 
+        at org.mapdb.DB$BTreeMapMaker.makeOrGet(DB.java:667) ~[?:?] 
+        at org.openhab.persistence.mapdb.internal.MapDBPersistenceService.activate(MapDBPersistenceService.java:115) ~[?:?] 
+
+
+
+
 MapDB: database engine 
 =======================
 [![Build Status](https://travis-ci.org/jankotek/mapdb.svg?branch=master)](https://travis-ci.org/jankotek/mapdb)
